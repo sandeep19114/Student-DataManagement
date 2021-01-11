@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Attendence | Student DataManagement</title>
+        <link rel="stylesheet" href="../css/header.css">
+        <script src="https://kit.fontawesome.com/432ee519b1.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <nav class="nav-tap">
+            <a class="logo" href="index.html"><h2>Student DataManagement</h2></a>
+            <a href="index.html" >Home</a>
+            <a href="attendence.html" >Attendence</a>
+            <a href="result.html" >Results</a>
+            <a href="notif.html" >Notifications</a>
+        </nav> <br/>
+
+        <center> <br/><br/>
+            <form name="aform" class="center" id="bef">
+                Roll no : <input type="text" name="roll" /> <br/><br/>
+                Select Class : 
+                <select name="year">
+                    <option hidden> Year</option>
+                    <option value="one"> I</option>
+                    <option value="two"> II</option>
+                    <option value="three"> III</option>
+                    <option value="four"> IV</option>
+                </select> &nbsp; &nbsp;
+                <select name="sem">
+                    <option hidden> Sem</option>
+                    <option value="one"> I</option>
+                    <option value="two"> II</option>
+                </select> <br/><br/>
+                <button name="asub">Get Attendence</button>
+                
+            </form>
+            <div id="aft" class="center">
+                Name : <label id="iname">name</label> <br/><br/>
+                Roll : <label id="iroll">roll</label> <br/><br/>
+                Year : <label id="iyear">year</label> <br/><br/>
+                No. of classes attended : <label id="iatt">0</label> <br/><br/>
+                Total no. of classes : <label id="itot">0</label> <br/><br/>
+                Percentage : <label id="iper">0</label>%
+
+            </div>
+        </center>
+    </body>
+</html>
