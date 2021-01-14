@@ -15,22 +15,22 @@
         </nav> <br/>
 
         <center> <br/><br/>
-            <form name="rform" class="center" id="bef">
-                Roll no : <input type="text" name="roll" /> <br/><br/>
+            <form name="rform" class="center" id="bef" onsubmit="return validate()">
+                Roll no : <input type="text" name="roll" id="roll" onblur="callBlur(1)" onfocus="callFocus(1)"/> <br/><br/>
                 Select Class : 
-                <select name="year">
+                <select name="year" id= "year" onblur="callBlur(2)" onfocus="callFocus(2)">
                     <option hidden> Year</option>
-                    <option value="one"> I</option>
-                    <option value="two"> II</option>
-                    <option value="three"> III</option>
-                    <option value="four"> IV</option>
+                    <option value="i"> I</option>
+                    <option value="ii"> II</option>
+                    <option value="iii"> III</option>
+                    <option value="iv"> IV</option>
                 </select> &nbsp; &nbsp;
-                <select name="sem">
+                <select name="sem" id="sem" onblur="callBlur(3)" onfocus="callFocus(3)">
                     <option hidden> Sem</option>
-                    <option value="one"> I</option>
-                    <option value="two"> II</option>
+                    <option value="i"> I</option>
+                    <option value="ii"> II</option>
                 </select> <br/><br/>
-                DOB : <input type="date" name="dob" /> <br/><br/>
+                DOB : <input type="date" name="dob" id="dob" onblur="callBlur(4)" onfocus="callFocus(4)"/> <br/><br/>
                 <button name="asub">Get Result</button>
                 
             </form>
@@ -42,5 +42,6 @@
 
             </div>
         </center>
+        <script src="../js/result.js" ></script>
     </body>
 </html>
